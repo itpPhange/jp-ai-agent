@@ -71,7 +71,18 @@
 			<version>1.0.0-M6.1</version>
 		</dependency>
 
-	</dependencies>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-markdown-document-reader</artifactId>
+            <version>1.0.0-M6</version>
+        </dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.38</version>
+			<scope>provided</scope>
+		</dependency>
+    </dependencies>
 
 	<repositories>
 		<repository>

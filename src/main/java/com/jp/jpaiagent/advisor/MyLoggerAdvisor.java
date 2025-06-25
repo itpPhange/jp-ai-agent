@@ -30,12 +30,13 @@ public class MyLoggerAdvisor implements CallAroundAdvisor, StreamAroundAdvisor {
     }
 
     private AdvisedRequest before(AdvisedRequest request) {
-        log.info("AI Request: {}", request.userText());
+        System.out.println("AI Request: {}"+request.userText());
+
         return request;
     }
 
     private void observeAfter(AdvisedResponse advisedResponse) {
-        log.info("AI Response: {}", advisedResponse.response().getResult().getOutput().getText());
+        System.out.println("AI Response: {}"+ advisedResponse.response().getResult().getOutput().getText());
     }
 
     @Override
